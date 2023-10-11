@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<head>
+  <style>
+    body {
+      background-image: url('./assets//imagem.png'); /* Substitua com a URL da sua imagem de fundo */
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: rgba(192, 192, 192, 0.7);
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      margin: 100px auto;
+      align-items: center;
+      justify-content: center;
+      margin-top: 250px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 1px solid #000;
+    }
+
+    input[type="submit"] {
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: #008CBA;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="/seu-endpoint" method="get">
+      <label for="login">Login:</label>
+      <input type="text" id="login" name="login" placeholder="Digite seu login" required><br>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><br>
+
+      <input type="submit" value="Entrar">
+    </form>
+  </div>
+
+  <footer>
+    <a href="#" id="politicas-link">Políticas de Privacidade</a> | <a href="#" id="termos-link">Termos de Serviço</a>
+  </footer>
+
+  <div id="politicas-container" style="color: aliceblue;">
+    <!-- Conteúdo das Políticas de Privacidade -->
+    **POLÍTICA DE PRIVACIDADE DO Cadastro Portfolio**
+
+Sua privacidade é importante para nós no Cadastro Portfolio. Esta Política de Privacidade descreve como coletamos, usamos e protegemos suas informações pessoais.
+
+1. **INFORMAÇÕES COLETADAS:**
+Coletamos informações que você fornece ao usar o Cadastro Portfolio, como nome, endereço de email, e outras informações pessoais.
+
+2. **USO DE INFORMAÇÕES:**
+Usamos suas informações para fornecer e melhorar o Cadastro Portfolio, responder a solicitações, enviar informações importantes e personalizar a experiência do usuário.
+
+3. **COMPARTILHAMENTO DE INFORMAÇÕES:**
+Não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para fornecer nossos serviços ou conforme exigido por lei.
+
+4. **SEGURANÇA:**
+Tomamos medidas para proteger suas informações pessoais, mas nenhuma transmissão de dados pela internet é 100% segura.
+
+5. **COOKIES:**
+Usamos cookies e tecnologias semelhantes para melhorar a experiência do usuário. Você pode optar por desativar cookies nas configurações do seu navegador.
+
+6. **ALTERAÇÕES NA POLÍTICA:**
+Reservamo-nos o direito de modificar esta Política de Privacidade a qualquer momento. É responsabilidade do usuário verificar periodicamente as alterações.
+
+7. **CONTATO:**
+Para dúvidas ou preocupações relacionadas à privacidade, entre em contato conosco pelo email suporteportfolio@gmail.com .
+
+Data de vigência: 10/08/2023
+
+  </div>
+
+  <div id="termos-container" style="color: aliceblue;">
+    <!-- Conteúdo dos Termos de Serviço -->
+    **TERMOS DE USO DO Cadastro Portfolio**
+
+Bem-vindo aos Termos de Uso do Cadastro Portfolio!
+
+1. **ACEITAÇÃO DOS TERMOS:**
+Ao acessar ou usar Cadastro Portfolio ("Aplicativo"), você concorda em cumprir e estar sujeito a estes Termos de Uso.
+
+2. **CADASTRO:**
+Para usar o Cadastro Portfolio, você pode ser solicitado a fornecer informações pessoais. Você é responsável por manter a confidencialidade de suas informações de login.
+
+3. **DIREITOS DE PROPRIEDADE INTELECTUAL:**
+O Cadastro Portfolio e todo o conteúdo associado são de propriedade exclusiva e estão protegidos por direitos autorais e outras leis de propriedade intelectual.
+
+4. **LIMITAÇÃO DE RESPONSABILIDADE:**
+O Cadastro Portfolio não será responsável por quaisquer danos diretos, indiretos, incidentais, especiais ou consequenciais resultantes do uso ou incapacidade de usar o Aplicativo.
+
+5. **ALTERAÇÕES NOS TERMOS:**
+Reservamo-nos o direito de modificar estes Termos de Uso a qualquer momento. É responsabilidade do usuário verificar periodicamente as alterações.
+
+6. **ENCERRAMENTO:**
+Podemos encerrar ou suspender sua conta a nosso critério, a qualquer momento, sem aviso prévio.
+
+7. **LEI APLICÁVEL:**
+Estes Termos de Uso são regidos pelas leis do Brasil.
+
+8. **CONTATO:**
+Para entrar em contato conosco ou relatar problemas, envie um email para suporteportfolio@gmail.com.
+
+Obrigado por escolher o Cadastro Portfolio!
+
+Data de vigência: 10/08/2023
+
+  </div>
+
+  <script>
+    // JavaScript para lidar com a exibição dos termos
+    const politicasLink = document.getElementById('politicas-link');
+    const termosLink = document.getElementById('termos-link');
+    const politicasContainer = document.getElementById('politicas-container');
+    const termosContainer = document.getElementById('termos-container');
+
+    politicasLink.addEventListener('click', () => {
+      politicasContainer.style.display = 'block';
+      termosContainer.style.display = 'none';
+    });
+
+    termosLink.addEventListener('click', () => {
+      termosContainer.style.display = 'block';
+      politicasContainer.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
